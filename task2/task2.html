@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" href="favicon.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<style>
+    html, body{
+        scroll-behavior: smooth;
+    }
+    h2{
+        color:rgb(19, 227, 8);
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    body{
+        font-family: Arial, sans-serif;
+        margin:0;
+        padding:0;
+        background-color: #f4f4f4;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .name-label{
+        margin-left:10px;
+        margin-right: 20px;
+    }
+    .description{
+        margin-right: 200px;
+    }
+    .profilepanel{
+        display:grid;
+        grid-template-columns: 0.5fr 2.5fr;
+        gap:20px;
+        justify-content:flex-end;
+        margin-top:20px;
+        margin-left:10px;
+        margin-right:10px;
+        padding-left:20px;
+        box-shadow: grey 5px 5px 15px;
+        border-radius:10px;
+    }
+    .profilepanel:hover{
+        transform:scale(1.02);
+        transition: transform 0.3s ease;
+    }
+    .aboutme h3{
+        margin-bottom:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-bottom: 20px;
+    }
+    .aboutme{
+        padding:20px;
+        font-size: 18px;
+    }
+    .aboutme:hover{
+        transform:scale(1.02);
+        transition:transform 0.3s ease;
+    }
+    .area{
+        margin-top:20px;
+        margin-left:10px;
+        margin-right:10px;
+        padding:20px;
+        box-shadow: grey 5px 5px 15px;
+        border-radius:10px;
+    }
+    .area:hover{
+        transform:scale(1.02);
+        transition: transform 0.3s ease;
+    }
+    .area h2{
+        margin-bottom:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .navbar{
+        background-color: black;
+        color:white;
+        position: sticky;
+        display:flex;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:10px;
+        border-radius:5px;
+        justify-content: space-between;
+        margin-top:5px;
+        margin-left:10px;
+        margin-right:10px;
+        width:auto;
+        height:30px;
+        font-size: 20px;
+        overflow: hidden;
+    }
+    .navbar a{
+        text-decoration: none;
+        color: white;
+        padding: 14px 20px;
+    }
+    .navbar a:hover{
+        background-color: rgb(19, 227, 8);
+        border-radius:5px;
+    }
+    .area ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        font-size: 20px;
+    }
+    .educationarea{
+        margin-top:20px;
+        margin-left:10px;
+        margin-right:10px;
+        padding:20px;
+        font-size: 20px;
+        box-shadow: grey 5px 5px 15px;
+        border-radius:10px;
+    }
+    .educationarea:hover{
+        transform:scale(1.02);
+        transition:transform 0.3s ease;
+    }
+    .education ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 20px;
+    }
+    .educationarea label{
+        font-weight: bold;
+        color:rgb(10, 10, 224);
+    }
+    .contacts p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .contacts a{
+        font-size: 20px;
+        text-decoration: none;
+        color: blue;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .contacts a:hover{
+        text-decoration: none;
+    }
+    .contacts{
+        margin-top:20px;
+        margin-left:10px;
+        margin-right:10px;
+        padding:20px;
+        box-shadow: grey 5px 5px 15px;
+        border-radius:10px;
+    }
+    .contacts:hover{
+        transform:scale(1.02);
+        transition: transform 0.3s ease;
+    }
+    .contacts h2{
+        margin-bottom:10px;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .area ul.column{
+        flex-direction: row;
+        gap: 100px;
+    }
+    .area ul.column ul{
+        list-style-type: disc;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+</style>
+<header>
+    <div class="navbar">
+        <nav class="nav-links">
+            <label class="name-label" style="font-size:25px; font-weight:bold;">Arun Kumar</label>
+            <label class="description" style="font-size:15px;">Final Year EEE Student</label>
+            <a href=#home>Home</a>
+            <a href="#area of interest">Area of Interest</a>
+            <a href=#education>Education</a>
+            <a href=#skills>Skills</a>
+            <a href=#projects>Projects</a>
+            <a href="#Certifications">Certifications</a>
+            <a href=#contact>Contact</a>
+        </nav>
+    </div>
+</header>
+<body>
+    <section id="home">
+    <div class="profilepanel">
+    <div class="picname">
+        <img src="C:\Users\arunk\OneDrive\Documents\task2\PHOTO.jpeg" alt="Arun Kumar" width="200" height="250" padding="10px" style="border-radius:10px; ;padding-left:20px;padding-top: 50px;">
+    </div>
+    <div class="aboutme">
+        <h1>Arun Kumar G</h1>
+        <h3 class="desc">Aspiring Software & Embedded Systems Engineer</h3>
+        <h2>The Mind Behind The Work</h2>
+        <p style="font-size: 20px;">I'm an Electrical and Electronics Engineering student with a strong understanding of fundamental hardware concepts and a growing enthusiasm for software development. I like addressing engineering problems by combining my core technical knowledge with programming skills and logical reasoning. Alongside this, I actively explore areas such as web development and problem-solving techniques, with an emphasis on creating solutions that are both efficient and practical. I aim to be part of projects that connect traditional engineering principles with contemporary software technologies.</p>
+    </div>
+    </section>
+    <section id="area of interest">
+        <div class="area">
+        <h2>Area of Interest</h2>
+        <ul class="column">
+        <ul>
+            <li>Renewable Energy</li>
+            <li>Software Development</li>
+        </ul>
+        <ul>
+            <li>Embedded Systems</li>
+            <li>Power Electronics</li>
+        </ul>
+        <ul>
+            <li>Machine Design</li>
+            <li>MATLAB</li>
+        </ul>
+        <ul>
+            <li>Web Development</li>
+        </ul>
+        </ul>
+        </div>
+    </section>
+    <section id="education">
+        <div class="educationarea">
+        <h2>Education</h2>
+        <ul>
+            <li>Pursuing Bachelor of Technology in Electrical and Electronics Engineering - Mepco Schlenk Engineering College,Sivakasi. (2022-2026)
+                <br>
+                <div class="detail"><p>Current CGPA: 
+                    <label>8.63</label>
+                    </p>
+                    </div>
+            </li>
+            <li>Higher Secondary Education - S.H.N.V.Higher Secondary School,Sivakasi. (2020-2022)
+                <br>
+                <div class="detail"><p>Percentage: 
+                    <label>85.83%</label>
+                    </p>
+                    </div>
+            </li>
+            <li>Secondary Education - S.H.N.V.Higher Secondary School,Sivakasi. (2018-2020)
+                <br>
+                <div class="detail"><p>Percentage: 
+                    <label>79.6%</label>
+                    </p>
+                    </div>
+            </li>
+        </ul>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="area">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: C, C++, Python, Java</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            <li>Embedded Systems: Arduino, Espressif 32</li>
+            <li>Software Tools: MATLAB, Simulink, Git</li>
+        </ul>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="education area">
+        <h2>Projects</h2>
+        <ul>
+            <li>AI-Powered Smart Emergency Response System with Dynamic Routing and Virtual Patient Monitoring </li>
+            <li>Real-Time Energy Control and Automation System using ESP-32</li>
+        </ul>
+        </div>
+    </section>
+    <section id="Certifications">
+        <div class="education area">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Inplant Training Certificate - Tamil Nadu Generation & Distribution & Co. Ltd.</li>
+            <li>Programming In Java - IIT Kharagpur</li>
+            <li>Programming of Siemens PLC - Simatic S7-1200 - SITRAIN Digital Training Academy</li>
+            <li>Smart Grid: Basics to Advanced Technologies - IIT Roorkee</li>
+            <li>The Joy Of Computing Using Python - IIT Madras</li>
+            <li>English for Technical Professionals - IEEE</li>
+        </ul>
+        </div>
+    </section>
+</body>
+<footer>
+    <section id="contact">
+        <div class="contacts">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me through the following contact details:</p>
+        <p><strong>Address:</strong><br>
+        4/1219,Hussain Colony,Sivakasi-626189.</p>
+        <p><strong>Email:</strong><br>
+            arunkumarg271@gmail.com</p>
+        <p><strong>Phone:</strong><br>
+            +91 9626551333</p>
+            <p><strong>Linkedin:</strong>
+            <br>
+            <a href="https://www.linkedin.com/in/arun-kumar-g-93348a383/">View Linkedin profile</a>
+            </p>
+            <strong>Resume:</strong>
+            <br>
+            <a href="C:\Users\arunk\OneDrive\Documents\task2\Software Resume.pdf sabre_compressed.pdf" download>Download Resume</a>
+        </div>
+    </section>
+    </footer>
+</html>
